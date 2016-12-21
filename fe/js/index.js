@@ -1,4 +1,3 @@
-import React from 'react'
-import {render} from 'react-dom'
+import {render} from 'react-dom';
 
-render(<div>ceshfdsfdsfdsi</div>, document.getElementById('root'))
+render(<div>ceshfdsfdsfdsi</div>, document.getElementById('root'));

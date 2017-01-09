@@ -1,4 +1,4 @@
-import add from '../js/utils/test.js';
+import add from '../../js/utils/test.js';
 import chai from 'chai';
 var expect = chai.expect;
 

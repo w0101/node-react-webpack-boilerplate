@@ -1,7 +1,7 @@
-var webpack = require('webpack')
-var path = require('path')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var webpack = require('webpack');
+var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 	entry: './fe/js/index.js',
@@ -36,8 +36,8 @@ module.exports = {
 		      loaders: ['babel'],
 		      exclude: /node_modules/
 		    },{
-		      test: /\.css$/,
-		      loader: ExtractTextPlugin.extract('css?modules'),
+		      test: /\.less$/,
+		      loader: ExtractTextPlugin.extract('css?modules&localIdentName=[name]-[local]-[hash:base64:5]!less'),
 		    },{
 		      test: /\.(eot|woff|woff2|ttf|svg|png|jpg)$/,
 		      loader: 'url-loader?limit=30000&name=[name]-[hash].[ext]',
@@ -46,4 +46,4 @@ module.exports = {
 		]
 	}
 
-}
+};
